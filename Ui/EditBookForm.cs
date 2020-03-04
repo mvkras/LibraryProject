@@ -87,5 +87,39 @@ namespace Diplom.Krasnov__WindowsForms.Ui
                 MessageBox.Show(exp.ToString());
             }
         }
+
+        Point lastPoint; //Специальный класс для задания координат
+        private void Logo_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Делаем проверку, если нажали на кнопку - двигаем наше окно (Для верхней части, где авторизация)
+            if (e.Button == MouseButtons.Left)
+            {
+                //обратились к координате X, сможем определиться, где находится наш курсор
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void Logo_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void EditBookForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Делаем проверку, если нажали на кнопку - двигаем наше окно
+            if (e.Button == MouseButtons.Left)
+            {
+                //обратились к координате X, сможем определиться, где находится наш курсор
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void EditBookForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            //Устанавливаем новые координаты
+            lastPoint = new Point(e.X, e.Y);
+        }
     }
 }

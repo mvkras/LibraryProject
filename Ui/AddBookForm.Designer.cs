@@ -48,9 +48,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 20.25F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(50, 216);
+            this.label1.Location = new System.Drawing.Point(33, 134);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 59);
+            this.label1.Size = new System.Drawing.Size(118, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Название";
             // 
@@ -59,9 +60,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 20.25F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(50, 317);
+            this.label2.Location = new System.Drawing.Point(33, 196);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 59);
+            this.label2.Size = new System.Drawing.Size(88, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "Автор";
             // 
@@ -70,9 +72,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 20.25F, System.Drawing.FontStyle.Italic);
             this.label3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label3.Location = new System.Drawing.Point(50, 412);
+            this.label3.Location = new System.Drawing.Point(33, 255);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 59);
+            this.label3.Size = new System.Drawing.Size(54, 39);
             this.label3.TabIndex = 2;
             this.label3.Text = "Год";
             // 
@@ -81,42 +84,47 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 20.25F, System.Drawing.FontStyle.Italic);
             this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(50, 510);
+            this.label4.Location = new System.Drawing.Point(33, 316);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 59);
+            this.label4.Size = new System.Drawing.Size(79, 39);
             this.label4.TabIndex = 3;
             this.label4.Text = "Жанр";
             // 
             // titleField
             // 
             this.titleField.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic);
-            this.titleField.Location = new System.Drawing.Point(238, 216);
+            this.titleField.Location = new System.Drawing.Point(159, 134);
+            this.titleField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.titleField.Name = "titleField";
-            this.titleField.Size = new System.Drawing.Size(793, 62);
+            this.titleField.Size = new System.Drawing.Size(530, 44);
             this.titleField.TabIndex = 4;
             // 
             // authorField
             // 
             this.authorField.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic);
-            this.authorField.Location = new System.Drawing.Point(238, 317);
+            this.authorField.Location = new System.Drawing.Point(159, 196);
+            this.authorField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.authorField.Name = "authorField";
-            this.authorField.Size = new System.Drawing.Size(793, 62);
+            this.authorField.Size = new System.Drawing.Size(530, 44);
             this.authorField.TabIndex = 5;
             // 
             // yearField
             // 
             this.yearField.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic);
-            this.yearField.Location = new System.Drawing.Point(238, 412);
+            this.yearField.Location = new System.Drawing.Point(159, 255);
+            this.yearField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.yearField.Name = "yearField";
-            this.yearField.Size = new System.Drawing.Size(793, 62);
+            this.yearField.Size = new System.Drawing.Size(530, 44);
             this.yearField.TabIndex = 6;
             // 
             // genreField
             // 
             this.genreField.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Italic);
-            this.genreField.Location = new System.Drawing.Point(238, 510);
+            this.genreField.Location = new System.Drawing.Point(159, 316);
+            this.genreField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.genreField.Name = "genreField";
-            this.genreField.Size = new System.Drawing.Size(793, 62);
+            this.genreField.Size = new System.Drawing.Size(530, 44);
             this.genreField.TabIndex = 7;
             // 
             // addBookBtn
@@ -129,9 +137,10 @@
             this.addBookBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.addBookBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addBookBtn.Font = new System.Drawing.Font("Segoe UI Emoji", 15.75F, System.Drawing.FontStyle.Italic);
-            this.addBookBtn.Location = new System.Drawing.Point(799, 622);
+            this.addBookBtn.Location = new System.Drawing.Point(533, 385);
+            this.addBookBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addBookBtn.Name = "addBookBtn";
-            this.addBookBtn.Size = new System.Drawing.Size(232, 62);
+            this.addBookBtn.Size = new System.Drawing.Size(155, 38);
             this.addBookBtn.TabIndex = 8;
             this.addBookBtn.Text = "Добавить";
             this.addBookBtn.UseVisualStyleBackColor = false;
@@ -144,9 +153,8 @@
             this.panel2.Controls.Add(this.Logo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1076, 162);
+            this.panel2.Size = new System.Drawing.Size(717, 100);
             this.panel2.TabIndex = 9;
             // 
             // CloseButton
@@ -156,10 +164,9 @@
             this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CloseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CloseButton.Location = new System.Drawing.Point(1024, 9);
-            this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CloseButton.Location = new System.Drawing.Point(683, 6);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(39, 37);
+            this.CloseButton.Size = new System.Drawing.Size(27, 25);
             this.CloseButton.TabIndex = 1;
             this.CloseButton.Text = "X";
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
@@ -172,19 +179,20 @@
             this.Logo.Font = new System.Drawing.Font("Segoe Print", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Logo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Logo.Location = new System.Drawing.Point(0, 0);
-            this.Logo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(1076, 162);
+            this.Logo.Size = new System.Drawing.Size(717, 100);
             this.Logo.TabIndex = 0;
             this.Logo.Text = "Добавление";
             this.Logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Logo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Logo_MouseDown);
+            this.Logo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Logo_MouseMove);
             // 
             // AddBookForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(44)))), ((int)(((byte)(115)))));
-            this.ClientSize = new System.Drawing.Size(1076, 726);
+            this.ClientSize = new System.Drawing.Size(717, 449);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.addBookBtn);
             this.Controls.Add(this.genreField);
@@ -195,7 +203,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddBookForm";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddBookForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddBookForm_MouseMove);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

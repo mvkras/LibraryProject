@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Diplom.Krasnov__WindowsForms.Ui
 {
-    public partial class ShowTakenBooksForm : Form
+    public partial class ShowTakenBooksForm : Form  //Форма: Список книг, которые пользователь взял
     {
         private readonly User user;
         public ShowTakenBooksForm(User user)
@@ -77,6 +77,39 @@ namespace Diplom.Krasnov__WindowsForms.Ui
         private void CloseButton_MouseLeave(object sender, EventArgs e)
         {
             CloseButton.ForeColor = Color.Red;
+        }
+
+        Point lastPoint; //Специальный класс для задания координат
+        private void Logo_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Делаем проверку, если нажали на кнопку - двигаем наше окно (Для верхней части, где авторизация)
+            if (e.Button == MouseButtons.Left)
+            {
+                //обратились к координате X, сможем определиться, где находится наш курсор
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void Logo_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void ShowTakenBooksForm_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Делаем проверку, если нажали на кнопку - двигаем наше окно (Для верхней части, где авторизация)
+            if (e.Button == MouseButtons.Left)
+            {
+                //обратились к координате X, сможем определиться, где находится наш курсор
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void ShowTakenBooksForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }
