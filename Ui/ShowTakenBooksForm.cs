@@ -19,7 +19,7 @@ namespace Diplom.Krasnov__WindowsForms.Ui
             
         }
 
-        public void ShowData()
+        public void ShowData() //дата, когда пользователь взял книгу
         {
             booksCmb.DataSource = Db.Instance.GetAllTakenBookForUser(user.Id);
         }
@@ -48,7 +48,7 @@ namespace Diplom.Krasnov__WindowsForms.Ui
             {
                 var sb = new StringBuilder();
 
-                var format = "{0, -15}{1}";
+                var format = "{0, -15}{1}"; //форматированный вывод. Вместо {0} и {1} будут подставлены значения -15 означает выравнивание, - показывает относительно правого или левого края
                 var book = tbook.Book;
                 // собираем информацию
                 sb.AppendFormat(format, "Название:", book.Title);

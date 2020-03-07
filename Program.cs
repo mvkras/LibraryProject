@@ -14,8 +14,8 @@ namespace Diplom.Krasnov__WindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-         //   Application.Run(new LoginForm()); // запуск Окна авторизации
-            Application.Run(new RegisterForm());  //Запуск окна регистрации
+            Application.Run(new LoginForm()); // запуск Окна авторизации
+          //Application.Run(new RegisterForm());  //Запуск окна регистрации
         }
     }
 }
