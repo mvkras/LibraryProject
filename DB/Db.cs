@@ -82,7 +82,7 @@ namespace Diplom.Krasnov__WindowsForms.DB
                 BookId = bookId,
                 User = user,
                 UserId = userId,
-                Date = DateTime.UtcNow
+                Date = DateTime.Now
             };
             var tb = context.TakenBooks.Add(takenBook);
             context.SaveChanges();
